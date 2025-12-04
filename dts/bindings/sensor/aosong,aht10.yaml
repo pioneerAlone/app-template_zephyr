@@ -1,0 +1,42 @@
+# Copyright (c) 2024 Custom App Contributors
+# SPDX-License-Identifier: Apache-2.0
+
+description: |
+  Aosong AHT10 temperature and humidity sensor.
+  
+  Reference: https://datasheetspdf.com/pdf-file/1127626/Aosong/AHT10/1
+
+  Example definition:
+    aht10@38 {
+        compatible = "aosong,aht10";
+        reg = <0x38>;
+        vdd-supply = <&vdd>;
+        label = "AHT10";
+    };
+
+compatible: "aosong,aht10"
+
+include: i2c-device.yaml
+
+properties:
+  vdd-supply:
+    type: phandle
+    description: |
+      Regulator that supplies power to the sensor VDD pin.
+      If present, the regulator will be enabled during driver initialization.
+
+  vddio-supply:
+    type: phandle
+    description: |
+      Regulator that supplies power to the sensor VDDIO pin.
+      If present, the regulator will be enabled during driver initialization.
+
+  label:
+    type: string
+    description: Human readable string describing the device.
+
+  reset-gpios:
+    type: phandle-array
+    description: |
+      GPIO pin connected to the sensor's reset pin.
+      If present, the pin will be asserted during driver initialization.

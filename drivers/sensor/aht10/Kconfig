@@ -1,0 +1,10 @@
+# Copyright (c) 2024 Custom App Contributors
+# SPDX-License-Identifier: Apache-2.0
+
+config AHT10
+	bool "Aosong AHT10 temperature and humidity sensor"
+	default y
+	depends on DT_HAS_AOSONG_AHT10_ENABLED
+	select I2C
+	help
+	  Enable Aosong AHT10 temperature and humidity sensor

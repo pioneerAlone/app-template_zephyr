@@ -1,0 +1,9 @@
+# Copyright (c) 2023 Tisilicon
+# SPDX-License-Identifier: Apache-2.0
+
+
+config BOARD_DEV_STM32L475
+	bool "Custom STM32L475 Development Board"
+	select SOC_STM32L475XX
+	
+

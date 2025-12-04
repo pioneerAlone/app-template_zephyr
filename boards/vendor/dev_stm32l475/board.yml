@@ -1,0 +1,6 @@
+board:
+  name: dev_stm32l475
+  full_name: STM32L475-Dev
+  vendor: vendor
+  socs:
+    - name: stm32l475xx

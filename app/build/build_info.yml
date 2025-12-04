@@ -1,0 +1,4 @@
+west:
+  command: /Users/wangbo/zephyrproject/.venv/bin/west build -b qemu_x86 --pristine
+  topdir: /Users/wangbo/zephyrproject
+  version: 1.5.0

@@ -1,0 +1,1 @@
+"mcuboot":"/Users/wangbo/zephyrproject/external/bootloader/mcuboot":"/Users/wangbo/zephyrproject/external/bootloader/mcuboot/boot/zephyr/sysbuild"
