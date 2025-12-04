@@ -1,7 +1,0 @@
-west:
-  command: /Users/wangbo/zephyrproject/.venv/bin/west build -b qemu_cortex_m3 /Users/wangbo/zephyrproject/custom_app/app
-    -p --build-dir /Users/wangbo/zephyrproject/custom_app/app/build/qemu_cortex_m3
-    -- -DBOARD_ROOT=/Users/wangbo/zephyrproject/external/zephyr -DCONFIG_DEBUG_OPTIMIZATIONS=y
-    -DCONFIG_DEBUG_THREAD_INFO=y
-  topdir: /Users/wangbo/zephyrproject
-  version: 1.5.0
